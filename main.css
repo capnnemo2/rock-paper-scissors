@@ -13,6 +13,19 @@ body {
   text-transform: uppercase;
 }
 
+.dark-text {
+  color: hsl(229, 25%, 31%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* BEGIN HEADER */
 header {
   border: 3px solid hsl(217, 16%, 45%);
   border-radius: 10px;
@@ -30,20 +43,143 @@ header {
   padding-left: 15px;
 }
 
-header p {
-  margin: 0;
-}
-
 .score {
   border-radius: 10px;
   text-align: center;
   background-color: white;
+  margin: 15px;
+  width: 70px;
 }
 
 .score h3 {
+  font-size: 0.4em;
   color: hsl(229, 64%, 46%);
+  letter-spacing: 0.2em;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .score p {
-  color: hsl(229, 25%, 31%);
+  margin: 0;
 }
+
+/* END HEADER */
+
+/* BEGIN RULES */
+.rules {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+}
+
+.rules svg {
+  margin-bottom: 25px;
+}
+
+.rules-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  padding-top: 0;
+}
+
+.rules-header svg {
+  margin: 5px;
+}
+
+.rules-btn {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  padding: 15px;
+}
+
+.rules-btn a {
+  color: white;
+}
+
+/* END RULES */
+
+.step-1 {
+  position: relative;
+}
+
+/* BEGIN TRIANGLE */
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* END TRIANGLE */
+
+/* BEGIN HAND */
+.hand {
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 15px solid;
+  margin: 10px;
+  position: relative;
+}
+
+.hand svg {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+/* END HAND */
+
+/* BEGIN PAPER */
+.paper {
+  border-color: hsl(230, 89%, 62%);
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+/* .paper::after {
+  content: "";
+  border: 5px solid yellow;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 3px;
+  bottom: 245px;
+  z-index: -1;
+} */
+/* END PAPER */
+
+/* BEGIN ROCK */
+.rock {
+  border-color: hsl(349, 71%, 52%);
+  position: absolute;
+  top: 140px;
+  right: 75px;
+}
+
+.rock svg {
+  position: absolute;
+  top: 35px;
+}
+
+/* END ROCK */
+
+/* BEGIN SCISSORS */
+.scissors {
+  border-color: hsl(39, 89%, 49%);
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+/* END SCISSORS */
+
+/* USE BOX SHADOW FOR STEP 4 EFFECT AROUND WINNER */
